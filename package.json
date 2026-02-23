@@ -1,0 +1,28 @@
+{
+  "name": "prisma-seeder",
+  "version": "0.1.0",
+  "description": "A scalable, environment-aware seeding framework for Prisma",
+  "author": "Prime Innovators",
+  "license": "MIT",
+  "keywords": [
+    "prisma",
+    "seeding",
+    "database",
+    "migrations",
+    "seed-runner"
+  ],
+  "types": "./src/index.ts",
+  "bin": {
+    "prisma-seeder": "./dist/cli.js"
+  },
+  "scripts": {
+    "dev": "bun run --watch src/*",
+    "build": "bun build ./src/index.ts --outdir ./dist"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
