@@ -1,6 +1,6 @@
 {
   "name": "@primeinnovators/prisma-seeder",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "description": "A scalable, environment-aware seeding framework for Prisma",
   "author": "Prime Innovators",
@@ -26,10 +26,12 @@
   },
   "scripts": {
     "dev": "bun run --watch src/*",
-    "build": "bun build ./src/index.ts ./src/cli.ts --outdir ./dist --target bun"
+    "build": "tsup src/index.ts src/cli.ts --format esm --dts"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
   },
   "peerDependencies": {
     "typescript": "^5"
