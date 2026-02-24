@@ -17,7 +17,7 @@
   },
   "scripts": {
     "dev": "bun run --watch src/*",
-    "build": "bun build ./src/index.ts --outdir ./dist"
+    "build": "bun build ./src/cli.ts --outdir ./dist --outfile cli.js --target bun"
   },
   "devDependencies": {
     "@types/bun": "latest"
