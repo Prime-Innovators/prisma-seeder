@@ -1,0 +1,32 @@
+# Source files (TypeScript source, not needed after build)
+src/
+
+# Development and build configuration
+tsconfig.json
+bun.lock
+bun.lockb
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Git files
+.git
+.gitignore
+.github
+
+# IDE and editor files
+.vscode
+.idea
+*.swp
+*.swo
+.DS_Store
+
+# Development and environment files
+.flox/
+node_modules/
+*.tsbuildinfo
+.env
+.env.local
+
+# Testing and CI
+.github/workflows/

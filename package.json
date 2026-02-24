@@ -1,6 +1,7 @@
 {
-  "name": "prisma-seeder",
+  "name": "@primeinnovators/prisma-seeder",
   "version": "0.1.0",
+  "private": false,
   "description": "A scalable, environment-aware seeding framework for Prisma",
   "author": "Prime Innovators",
   "license": "MIT",
